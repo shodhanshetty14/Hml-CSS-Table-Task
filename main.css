@@ -1,0 +1,54 @@
+.table-container{
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    width: inherit;
+    /* scrollbar-width: 20px; */
+    /* height: 250px; */
+    /* background-color: white; */
+    /* align-content: center; */
+
+}
+
+th{
+    text-align: left;
+    background-color:  aqua;
+    position: sticky;
+    top: 0;
+    /* background-color: lightpink; */
+}
+
+th::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background:  black;
+}
+
+table, th, td{
+    border: 1px, solid, black;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: lightgreen;
+    /* background-color: green; */
+}
+
+tbody tr:nth-child(even)
+{
+    background-color: lightpink;
+}
